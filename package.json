@@ -4,10 +4,13 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "json-server": "json-server --watch __MOCK_JSON_SERVER__/db.json"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
+    "element-ui": "^2.15.2",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0"
@@ -17,8 +20,11 @@
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    "json-server": "^0.16.3",
     "node-sass": "^4.14.1",
+    "postcss-value-parser": "^4.1.0",
     "sass-loader": "^8.0.2",
+    "svg-sprite-loader": "^6.0.7",
     "vue-template-compiler": "^2.6.11"
   }
 }

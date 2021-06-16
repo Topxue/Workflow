@@ -1,0 +1,102 @@
+.error_tip {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  transform: translate(150%, 0px);
+  font-size: 24px;
+}
+.add-node-popover-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+.promoter_content {
+  padding: 0 20px;
+}
+.condition_content .el-button,
+.copyer_content .el-button,
+.approver_self_select .el-button,
+.promoter_content .el-button,
+.approver_content .el-button {
+  margin-bottom: 20px;
+}
+.promoter_content p {
+  padding: 18px 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+.promoter_person .el-dialog__body {
+  padding: 10px 20px 14px 20px;
+}
+.approver_content {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.approver_content .el-radio,
+.approver_some .el-radio,
+.approver_self_select .el-radio {
+  width: 27%;
+  margin-bottom: 20px;
+}
+.copyer_content .el-checkbox {
+  margin-bottom: 20px;
+}
+.el-checkbox__label {
+  font-size: 12px;
+}
+.condition_content,
+.copyer_content,
+.approver_self_select,
+.approver_manager,
+.approver_content,
+.approver_some {
+  padding: 15px;
+  border-bottom: 1px solid #EBEBEB;
+
+}
+.approver_manager p:first-of-type,
+.approver_some p {
+  line-height: 19px;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.approver_manager p {
+  line-height: 32px;
+}
+.approver_manager select {
+  width: 420px;
+  height: 32px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 4px;
+  border: 1px solid rgba(217, 217, 217, 1);
+}
+.approver_manager p.tip {
+  margin: 10px 0 22px 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #f8642d;
+}
+.approver_self {
+  padding: 28px 20px;
+}
+.approver_self_select h3 {
+  margin: 5px 0 20px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 19px;
+}
+.condition_copyer .el-drawer__body .priority_level {
+  position: absolute;
+  top: 6px;
+  right: 20px;
+  width: 100px;
+  height: 32px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 4px;
+  /* border: 1px solid rgba(217, 217, 217, 1); */
+}
+
+.demo-drawer__content > div {
+  border-top: 1px solid #f2f2f2;
+}

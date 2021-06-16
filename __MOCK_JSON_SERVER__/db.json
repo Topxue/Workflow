@@ -1,0 +1,248 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "group": [
+    {
+      "id": "20210520171327673629051",
+      "groupName": "考勤管理",
+      "createTime": "2021-05-20 17:13:28",
+      "createBy": null,
+      "updateTime": null,
+      "updateBy": null,
+      "remark": null,
+      "groupIcon": "#",
+      "companyId": "20210520171325829628806",
+      "orderNum": 1,
+      "defaultGroup": 1,
+      "resources": null
+    },
+    {
+      "id": "20210520171328752629076",
+      "groupName": "人事管理",
+      "createTime": "2021-05-20 17:13:29",
+      "createBy": null,
+      "updateTime": null,
+      "updateBy": null,
+      "remark": null,
+      "groupIcon": "#",
+      "companyId": "20210520171325829628806",
+      "orderNum": 2,
+      "defaultGroup": 0,
+      "resources": null
+    },
+    {
+      "id": "20210520171329675629081",
+      "groupName": "行政管理",
+      "createTime": "2021-05-20 17:13:30",
+      "createBy": null,
+      "updateTime": null,
+      "updateBy": null,
+      "remark": null,
+      "groupIcon": "#",
+      "companyId": "20210520171325829628806",
+      "orderNum": 3,
+      "defaultGroup": 0,
+      "resources": null
+    },
+    {
+      "id": "20210520171330683629086",
+      "groupName": "财务管理",
+      "createTime": "2021-05-20 17:13:31",
+      "createBy": null,
+      "updateTime": null,
+      "updateBy": null,
+      "remark": null,
+      "groupIcon": "#",
+      "companyId": "20210520171325829628806",
+      "orderNum": 4,
+      "defaultGroup": 0,
+      "resources": null
+    }
+  ],
+  "applications": [
+    {
+      "id": "20200909111123639000000",
+      "logoUri": "608b70ec7b96c0d2fd3a4505",
+      "logoName": "icon_0",
+      "moduleOfLogo": "application",
+      "sortIndex": 0,
+      "logoStatus": "normal"
+    },
+    {
+      "id": "202009091111236000001",
+      "logoUri": "608b9e0c7b96c0d2fd3a451f",
+      "logoName": "icon_1",
+      "moduleOfLogo": "application",
+      "sortIndex": 1,
+      "logoStatus": "normal"
+    },
+    {
+      "id": "202009091111236000002",
+      "logoUri": "608b9e0d7b96c0d2fd3a4520",
+      "logoName": "icon_2",
+      "moduleOfLogo": "application",
+      "sortIndex": 2,
+      "logoStatus": "normal"
+    },
+    {
+      "id": "202009091111236000003",
+      "logoUri": "608b9e0d7b96c0d2fd3a4521",
+      "logoName": "icon_3",
+      "moduleOfLogo": "application",
+      "sortIndex": 3,
+      "logoStatus": "normal"
+    },
+    {
+      "id": "202009091111236000004",
+      "logoUri": "608b9e0e7b96c0d2fd3a4522",
+      "logoName": "icon_4",
+      "moduleOfLogo": "application",
+      "sortIndex": 4,
+      "logoStatus": "normal"
+    },
+    {
+      "id": "202009091111236000005",
+      "logoUri": "608b9e0e7b96c0d2fd3a4523",
+      "logoName": "icon_5",
+      "moduleOfLogo": "application",
+      "sortIndex": 5,
+      "logoStatus": "normal"
+    },
+    {
+      "id": "202009091111236000006",
+      "logoUri": "608b9e0e7b96c0d2fd3a4524",
+      "logoName": "icon_6",
+      "moduleOfLogo": "application",
+      "sortIndex": 6,
+      "logoStatus": "normal"
+    },
+    {
+      "id": "202009091111236000007",
+      "logoUri": "608b9e0e7b96c0d2fd3a4525",
+      "logoName": "icon_7",
+      "moduleOfLogo": "application",
+      "sortIndex": 7,
+      "logoStatus": "normal"
+    },
+    {
+      "id": "202009091111236000008",
+      "logoUri": "608b9e0e7b96c0d2fd3a4526",
+      "logoName": "icon_8",
+      "moduleOfLogo": "application",
+      "sortIndex": 8,
+      "logoStatus": "normal"
+    },
+    {
+      "id": "202009091111236000009",
+      "logoUri": "608b9e0e7b96c0d2fd3a4527",
+      "logoName": "icon_9",
+      "moduleOfLogo": "application",
+      "sortIndex": 9,
+      "logoStatus": "normal"
+    },
+    {
+      "id": "2020090911112360000010",
+      "logoUri": "608b9e0f7b96c0d2fd3a4528",
+      "logoName": "icon_10",
+      "moduleOfLogo": "application",
+      "sortIndex": 10,
+      "logoStatus": "normal"
+    },
+    {
+      "id": "2020090911112360000011",
+      "logoUri": "608b9e0f7b96c0d2fd3a4529",
+      "logoName": "icon_11",
+      "moduleOfLogo": "application",
+      "sortIndex": 11,
+      "logoStatus": "normal"
+    },
+    {
+      "id": "2020090911112360000012",
+      "logoUri": "608b9e0f7b96c0d2fd3a452a",
+      "logoName": "icon_12",
+      "moduleOfLogo": "application",
+      "sortIndex": 12,
+      "logoStatus": "normal"
+    },
+    {
+      "id": "2020090911112360000013",
+      "logoUri": "608b9e0f7b96c0d2fd3a452b",
+      "logoName": "icon_13",
+      "moduleOfLogo": "application",
+      "sortIndex": 13,
+      "logoStatus": "normal"
+    },
+    {
+      "id": "2020090911112360000014",
+      "logoUri": "608b9e0f7b96c0d2fd3a452c",
+      "logoName": "icon_14",
+      "moduleOfLogo": "application",
+      "sortIndex": 14,
+      "logoStatus": "normal"
+    },
+    {
+      "id": "2020090911112360000015",
+      "logoUri": "608b9e0f7b96c0d2fd3a452d",
+      "logoName": "icon_15",
+      "moduleOfLogo": "application",
+      "sortIndex": 15,
+      "logoStatus": "normal"
+    },
+    {
+      "id": "2020090911112360000016",
+      "logoUri": "608b9e0f7b96c0d2fd3a452e",
+      "logoName": "icon_16",
+      "moduleOfLogo": "application",
+      "sortIndex": 16,
+      "logoStatus": "normal"
+    },
+    {
+      "id": "2020090911112360000017",
+      "logoUri": "608b9e107b96c0d2fd3a452f",
+      "logoName": "icon_17",
+      "moduleOfLogo": "application",
+      "sortIndex": 17,
+      "logoStatus": "normal"
+    },
+    {
+      "id": "2020090911112360000018",
+      "logoUri": "608b9e107b96c0d2fd3a4530",
+      "logoName": "icon_18",
+      "moduleOfLogo": "application",
+      "sortIndex": 18,
+      "logoStatus": "normal"
+    },
+    {
+      "id": "2020090911112360000019",
+      "logoUri": "608b9e107b96c0d2fd3a4531",
+      "logoName": "icon_19",
+      "moduleOfLogo": "application",
+      "sortIndex": 19,
+      "logoStatus": "normal"
+    },
+    {
+      "id": "2020090911112360000020",
+      "logoUri": "608b9e107b96c0d2fd3a4532",
+      "logoName": "icon_20",
+      "moduleOfLogo": "application",
+      "sortIndex": 20,
+      "logoStatus": "normal"
+    },
+    {
+      "id": "2020090911112360000021",
+      "logoUri": "608b9e107b96c0d2fd3a4533",
+      "logoName": "icon_21",
+      "moduleOfLogo": "application",
+      "sortIndex": 21,
+      "logoStatus": "normal"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
