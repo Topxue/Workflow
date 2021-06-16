@@ -159,39 +159,39 @@
       </div>
     </div>
     <!-- 发起人 -->
-    <Sponsor
-        @saveSponsor="saveSponsor"
-        :promoterDrawer.sync="promoterDrawer"
-        :startNodeConfig.sync="startNodeConfig"
-        :flowPermissionList="getActionerRules()"
-    />
-    <!-- 审批人 -->
-    <Approved
-        @saveApprover="saveApprover"
-        :directorMaxLevel="directorMaxLevel"
-        :approverConfig.sync="approverConfig"
-        :approverDrawer.sync="approverDrawer"
-    />
-    <!-- 办理人 -->
-    <Worker
-        :workerConfig.sync="workerConfig"
-        :workerDrawer.sync="workerDrawer"
-        :directorMaxLevel="directorMaxLevel"
-        @saveWorker="saveWorker"
-    />
-    <!-- 抄送人 -->
-    <Copyer
-        @saveCopyer="saveCopyer"
-        :copyerDrawer.sync="copyerDrawer"
-        :copyerConfig.sync="copyerConfig"
-    />
-    <!-- 条件 -->
-    <Condition
-        :priorityLevel="priorityLevel"
-        :conditionDrawer.sync="conditionDrawer"
-        :conditionsConfig.sync="conditionsConfig"
-        @saveCondition="saveCondition"
-    />
+<!--    <Sponsor-->
+<!--        @saveSponsor="saveSponsor"-->
+<!--        :promoterDrawer.sync="promoterDrawer"-->
+<!--        :startNodeConfig.sync="startNodeConfig"-->
+<!--        :flowPermissionList="getActionerRules()"-->
+<!--    />-->
+<!--    &lt;!&ndash; 审批人 &ndash;&gt;-->
+<!--    <Approved-->
+<!--        @saveApprover="saveApprover"-->
+<!--        :directorMaxLevel="directorMaxLevel"-->
+<!--        :approverConfig.sync="approverConfig"-->
+<!--        :approverDrawer.sync="approverDrawer"-->
+<!--    />-->
+<!--    &lt;!&ndash; 办理人 &ndash;&gt;-->
+<!--    <Worker-->
+<!--        :workerConfig.sync="workerConfig"-->
+<!--        :workerDrawer.sync="workerDrawer"-->
+<!--        :directorMaxLevel="directorMaxLevel"-->
+<!--        @saveWorker="saveWorker"-->
+<!--    />-->
+<!--    &lt;!&ndash; 抄送人 &ndash;&gt;-->
+<!--    <Copyer-->
+<!--        @saveCopyer="saveCopyer"-->
+<!--        :copyerDrawer.sync="copyerDrawer"-->
+<!--        :copyerConfig.sync="copyerConfig"-->
+<!--    />-->
+<!--    &lt;!&ndash; 条件 &ndash;&gt;-->
+<!--    <Condition-->
+<!--        :priorityLevel="priorityLevel"-->
+<!--        :conditionDrawer.sync="conditionDrawer"-->
+<!--        :conditionsConfig.sync="conditionsConfig"-->
+<!--        @saveCondition="saveCondition"-->
+<!--    />-->
 
     <nodeWrap
         v-if="nodeConfig.childNode && nodeConfig.childNode"
@@ -220,11 +220,11 @@ import {
   generateMathRandomNodeId
 } from '@/config'
 
-import Copyer from './copyer'
-import Sponsor from './sponsor'
-import Worker from './worker'
-import Approved from './approved'
-import Condition from './conditional'
+// import Copyer from './copyer'
+// import Sponsor from './sponsor'
+// import Worker from './worker'
+// import Approved from './approved'
+// import Condition from './conditional'
 
 // 请假类型 => model
 // const LEAVE_TYPE = 'vacationId'
@@ -235,11 +235,11 @@ const NUMBER_RANGE_CONDITION = 'number_range_condition'
 export default {
   props: ['nodeConfig', 'flowPermission', 'directorMaxLevel', 'isTried'],
   components: {
-    Copyer,
-    Sponsor,
+    // Copyer,
+    // Sponsor,
     Worker,
-    Approved,
-    Condition
+    // Approved,
+    // Condition
   },
   data() {
     return {
@@ -267,7 +267,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['userIds', 'formJsonData'])
+    // ...mapGetters(['userIds', 'formJsonData'])
   },
 
   mounted() {
