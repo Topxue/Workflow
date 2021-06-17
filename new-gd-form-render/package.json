@@ -1,0 +1,15 @@
+{
+  "name": "gd-form-render",
+  "version": "1.0.0",
+  "description": "- vue\r - elementUI",
+  "main": "dist/gd-form-render.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack-merge": "^5.1.3"
+  }
+}

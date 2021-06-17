@@ -28,7 +28,9 @@
     </header>
 
     <div class="fd-nav-content">
+      <!--基础设置-->
       <base-setting ref="baseform" v-show="currentTab === 1" :formBaseInfo.sync="formBaseInfo"></base-setting>
+      <!--流程设计-->
       <section class="dingflow-design" v-show="currentTab === 3">
         <div class="zoom">
           <div :class="'zoom-out' + (nowVal == 50 ? ' disabled' : '')" @click="zoomSize(1)"></div>

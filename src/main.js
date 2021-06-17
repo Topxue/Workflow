@@ -11,12 +11,15 @@ import './assets/style/nodewarper.css'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
+const ProcessFormRender = require('../new-gd-form-render/main').default
 
 import nodeWrap from './components/nodeWrap'
 import addNode from './components/addNode'
 
 Vue.use(addNode)
 Vue.use(nodeWrap)
+Vue.use(ProcessFormRender)
+
 Vue.component('addNode', addNode) //初始化组件
 Vue.component('nodeWrap', nodeWrap) //初始化组件
 

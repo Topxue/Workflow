@@ -110,11 +110,11 @@
                     <span class="priority-title" @click="setPerson(index + 1)">
                       优先级{{ index + 1 }}
                     </span>
-                    <!-- <svg-icon
-                      icon-class="copy-cond"
-                      class-name="anticon anticon-copy copy"
-                      @click="copyCondition(index)"
-                    ></svg-icon> -->
+                    <svg-icon
+                        icon-class="copy-cond"
+                        class-name="anticon anticon-copy copy"
+                        @click="copyCondition(index)"
+                    ></svg-icon>
                     <i class="anticon anticon-close close" @click="delTerm(index)"></i>
                   </div>
                   <div
@@ -159,39 +159,39 @@
       </div>
     </div>
     <!-- 发起人 -->
-<!--    <Sponsor-->
-<!--        @saveSponsor="saveSponsor"-->
-<!--        :promoterDrawer.sync="promoterDrawer"-->
-<!--        :startNodeConfig.sync="startNodeConfig"-->
-<!--        :flowPermissionList="getActionerRules()"-->
-<!--    />-->
-<!--    &lt;!&ndash; 审批人 &ndash;&gt;-->
-<!--    <Approved-->
-<!--        @saveApprover="saveApprover"-->
-<!--        :directorMaxLevel="directorMaxLevel"-->
-<!--        :approverConfig.sync="approverConfig"-->
-<!--        :approverDrawer.sync="approverDrawer"-->
-<!--    />-->
-<!--    &lt;!&ndash; 办理人 &ndash;&gt;-->
-<!--    <Worker-->
-<!--        :workerConfig.sync="workerConfig"-->
-<!--        :workerDrawer.sync="workerDrawer"-->
-<!--        :directorMaxLevel="directorMaxLevel"-->
-<!--        @saveWorker="saveWorker"-->
-<!--    />-->
-<!--    &lt;!&ndash; 抄送人 &ndash;&gt;-->
-<!--    <Copyer-->
-<!--        @saveCopyer="saveCopyer"-->
-<!--        :copyerDrawer.sync="copyerDrawer"-->
-<!--        :copyerConfig.sync="copyerConfig"-->
-<!--    />-->
-<!--    &lt;!&ndash; 条件 &ndash;&gt;-->
-<!--    <Condition-->
-<!--        :priorityLevel="priorityLevel"-->
-<!--        :conditionDrawer.sync="conditionDrawer"-->
-<!--        :conditionsConfig.sync="conditionsConfig"-->
-<!--        @saveCondition="saveCondition"-->
-<!--    />-->
+    <Sponsor
+        @saveSponsor="saveSponsor"
+        :promoterDrawer.sync="promoterDrawer"
+        :startNodeConfig.sync="startNodeConfig"
+        :flowPermissionList="getActionerRules()"
+    />
+    <!-- 审批人 -->
+    <Approved
+        @saveApprover="saveApprover"
+        :directorMaxLevel="directorMaxLevel"
+        :approverConfig.sync="approverConfig"
+        :approverDrawer.sync="approverDrawer"
+    />
+    <!-- 办理人 -->
+    <!--    <Worker-->
+    <!--        :workerConfig.sync="workerConfig"-->
+    <!--        :workerDrawer.sync="workerDrawer"-->
+    <!--        :directorMaxLevel="directorMaxLevel"-->
+    <!--        @saveWorker="saveWorker"-->
+    <!--    />-->
+    <!-- 抄送人 -->
+    <Copyer
+        @saveCopyer="saveCopyer"
+        :copyerDrawer.sync="copyerDrawer"
+        :copyerConfig.sync="copyerConfig"
+    />
+    <!-- 条件 -->
+    <Condition
+        :priorityLevel="priorityLevel"
+        :conditionDrawer.sync="conditionDrawer"
+        :conditionsConfig.sync="conditionsConfig"
+        @saveCondition="saveCondition"
+    />
 
     <nodeWrap
         v-if="nodeConfig.childNode && nodeConfig.childNode"
@@ -202,10 +202,10 @@
   </div>
 </template>
 <script>
-import { mapGetters } from 'vuex'
+import {mapGetters} from 'vuex'
 
 import helper from '@/utils/Helper'
-import { arrToStr, copyerStr } from '@/utils'
+import {arrToStr, copyerStr} from '@/utils'
 import {
   AND_ALL,
   ONE_BY_ONE,
@@ -220,11 +220,11 @@ import {
   generateMathRandomNodeId
 } from '@/config'
 
-// import Copyer from './copyer'
-// import Sponsor from './sponsor'
+import Copyer from './copyer'
+import Sponsor from './sponsor'
 // import Worker from './worker'
-// import Approved from './approved'
-// import Condition from './conditional'
+import Approved from './approved'
+import Condition from './conditional'
 
 // 请假类型 => model
 // const LEAVE_TYPE = 'vacationId'
@@ -235,11 +235,11 @@ const NUMBER_RANGE_CONDITION = 'number_range_condition'
 export default {
   props: ['nodeConfig', 'flowPermission', 'directorMaxLevel', 'isTried'],
   components: {
-    // Copyer,
-    // Sponsor,
-    Worker,
-    // Approved,
-    // Condition
+    Copyer,
+    Sponsor,
+    // Worker,
+    Approved,
+    Condition
   },
   data() {
     return {
@@ -267,7 +267,7 @@ export default {
   },
 
   computed: {
-    // ...mapGetters(['userIds', 'formJsonData'])
+    ...mapGetters(['userIds', 'formJsonData'])
   },
 
   mounted() {
@@ -652,7 +652,7 @@ export default {
     },
 
     setPerson(priorityLevel) {
-      let { nodeType } = this.nodeConfig
+      let {nodeType} = this.nodeConfig
       if (nodeType === START_NODE) {
         // 第一版:V1->暂时取消发起权限
         if (this.formJsonData?.columns?.length) {
